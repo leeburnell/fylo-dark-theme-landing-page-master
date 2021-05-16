@@ -314,6 +314,10 @@ img {
     padding: 0.5rem 0;
 }
 
+.footer__content--contactmargin{
+    margin: 0 0 0 25px;
+}
+
 .footer__content--navigation li{
     padding: 0 0 15px 0;
 }
@@ -350,6 +354,12 @@ i.fab {
     border-radius: 50%;
     border: 1px solid var(--white);
     padding: 0.5em 0.6em;
+    width: 25px;
+}
+
+i.fab:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
 }
 
 .footer__content--social i {
