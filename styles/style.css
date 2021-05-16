@@ -164,6 +164,91 @@ button:hover {
     border-radius: 10px;
 }
 
+.testimonial__comment--text{
+    font-size: 1.2rem;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.testimonial__comment--commenter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial__comment--commenter figure img {
+        width: 30px;
+        border-radius: 50%;
+}
+
+.testimonial__comment--commenter p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.testimonial::before {
+    content: url(../images/bg-quotes.png);
+    display: block;
+    position: relative;
+    top: 37px;
+    right: 120px;
+    transform: scale(0.5);
+}
+
+.testimonial__comment--name span{
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.subscribe{
+    display: flex;
+    width: 90%;
+    background-color: var(--darkemail);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -190px;
+    gap: 20px;
+    top: -30px;
+}
+
+.subscribe__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subscribe__heading{
+    padding: 40px 0 0 0;
+}
+
+.subscribe__form--input{
+    height: 60px;
+    border-radius: 40px;
+    width: 300px;
+    border: 0;
+    padding: 0 0 0 30px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 50px 0;
+    background-color: var(--darkfooter);
+}
+
+.footer__logo{
+    margin-top: 300px;
+}
+
 @media screen and (min-width: 992px) {
     .main{
         background-image: url(../images/bg-curvy-desktop.svg);
@@ -232,5 +317,46 @@ button:hover {
         flex-direction: row;
         width: 75%;
         margin: 0 0 100px 0;
+    }
+
+    .testimonial::before {
+        top: -105px;
+        right: -65px;
+        transform: scale(1);
+        z-index: -1;
+    }
+
+    .subscribe {
+        top: -125px;
+    }
+
+    .subscribe__text{
+        width: 45%;
+    }
+
+    .subscribe__form{
+        flex-direction: row;
+    }
+
+    .subscribe__form--input{
+        width: 500px;
+        margin: 0 0 40px 0;
+    }
+
+    .footer{
+        align-items: flex-start;
+    }
+
+    .footer__logo{
+        margin-left: 100px;
+    }
+
+    .footer__content{
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 100px;
+        width: 80%;
+        gap: 50%;
+        justify-content: space-between;
     }
 }
