@@ -161,6 +161,10 @@ img {
     display: flex;
 }
 
+.learn-more__text--link a img {
+    margin-left: 10px;
+}
+
 .learn-more__text--link:hover a{
     color: var(--white);
     border-bottom: 1px solid var(--white);
