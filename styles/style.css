@@ -64,6 +64,10 @@ button:hover {
   cursor: pointer;
 }
 
+img {
+    max-width: 100%;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -82,7 +86,7 @@ button:hover {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 60px;
+  gap: 20px;
   font-family: 'Open-Sans', sans-serif;
 }
 
@@ -114,6 +118,18 @@ button:hover {
     background-image: url(../images/bg-curvy-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;  
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 100px;
+}
+
+.features .features__access, .features .features__security, .features .features__collaboration, .features .features__anyfile{
+    margin:  0 0 50px 0;
 }
 
 .learn-more {
@@ -249,6 +265,92 @@ button:hover {
     margin-top: 300px;
 }
 
+.footer__content--contact ul {
+    list-style: none;
+    text-align: left;
+}
+
+.footer__content--contact ul {
+    display: inline-block;
+    padding: 1rem 2rem;
+    max-width: 320px;
+}
+
+.footer__content--contact ul > li:before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    display: block;
+    float: left;
+    margin-left: -1.5rem;
+}
+
+.footer__content--contact ul > :nth-child(1):before {
+    background: url(../images/icon-location.svg);
+    background-repeat: no-repeat;
+}
+
+.footer__content--contact ul > :nth-child(2):before {
+    background: url(../images/icon-phone.svg);
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.footer__content--contact ul > :last-child:before {
+    background: url(../images/icon-email.svg);
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.footer__content--contact ul > li {
+    clear: left;
+    padding: 0.5rem 0;
+}
+
+.footer__content--navigation li{
+    padding: 0 0 15px 0;
+}
+
+.footer__content--navigation li a {
+    text-decoration: none;
+}
+
+.footer__content--navigation li a:hover {
+    text-decoration: un;
+}
+
+.footer__content--navigation{
+        align-self: flex-start;
+        margin-left: 40px;
+}
+
+.footer__content--navigation ul li {
+    list-style: none;
+}
+
+.footer__content--navigation ul li a{
+    color: var(--white);
+}
+
+.footer__content--social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+i.fab {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    padding: 0.5em 0.6em;
+}
+
+.footer__content--social i {
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
 @media screen and (min-width: 992px) {
     .main{
         background-image: url(../images/bg-curvy-desktop.svg);
@@ -272,6 +374,7 @@ button:hover {
 
     .features .features__access, .features .features__security, .features .features__collaboration, .features .features__anyfile{
         width: 70%;
+        margin: 0;
     }
 
     .learn-more{
@@ -354,9 +457,18 @@ button:hover {
     .footer__content{
         display: flex;
         flex-direction: row;
-        margin: 0 0 0 100px;
-        width: 80%;
-        gap: 50%;
+        margin-left: 100px;
+        gap: 50px;
         justify-content: space-between;
+        width: 88%;
+    }
+
+    .footer__content--navigation {
+        display: flex;
+        gap: 100px;
+    }
+
+    .footer__content--social {
+        align-items: flex-start;
     }
 }
