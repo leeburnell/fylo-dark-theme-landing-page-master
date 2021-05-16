@@ -104,7 +104,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 200px;
+  gap: 80px;
 }
 
 .main{
@@ -157,6 +157,8 @@ img {
     align-self: flex-start;
     text-decoration: none;
     border-bottom: 1px solid transparent;
+    align-items: center;
+    display: flex;
 }
 
 .learn-more__text--link:hover a{
@@ -238,6 +240,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 0 40px 0;
 }
 
 .subscribe__heading{
@@ -262,7 +265,7 @@ img {
 }
 
 .footer__logo{
-    margin-top: 300px;
+    margin-top: 260px;
 }
 
 .footer__content--contact ul {
@@ -316,12 +319,12 @@ img {
 }
 
 .footer__content--navigation li a:hover {
-    text-decoration: un;
+    text-decoration: underline;
 }
 
 .footer__content--navigation{
         align-self: flex-start;
-        margin-left: 40px;
+        margin: 30px 0 0 0;
 }
 
 .footer__content--navigation ul li {
@@ -352,6 +355,11 @@ i.fab {
 }
 
 @media screen and (min-width: 992px) {
+
+    .container{
+        gap: 200px;
+    }
+
     .main{
         background-image: url(../images/bg-curvy-desktop.svg);
         background-repeat: no-repeat;
@@ -439,6 +447,7 @@ i.fab {
 
     .subscribe__form{
         flex-direction: row;
+        padding: 0;
     }
 
     .subscribe__form--input{
@@ -451,7 +460,7 @@ i.fab {
     }
 
     .footer__logo{
-        margin-left: 100px;
+        margin: 300px 0 0 100px;
     }
 
     .footer__content{
@@ -466,6 +475,7 @@ i.fab {
     .footer__content--navigation {
         display: flex;
         gap: 100px;
+        margin-left: 40px;
     }
 
     .footer__content--social {
